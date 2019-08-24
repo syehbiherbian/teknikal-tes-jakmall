@@ -6,6 +6,8 @@ return [
     \Jakmall\Recruitment\Calculator\Commands\CommandSubstract::class,
     \Jakmall\Recruitment\Calculator\Commands\CommandMultiply::class,
     \Jakmall\Recruitment\Calculator\Commands\CommandDivide::class,
+    \Jakmall\Recruitment\Calculator\Commands\CommandPow::class,
+
 
 
 ];
