@@ -7,6 +7,8 @@ return [
     \Jakmall\Recruitment\Calculator\Commands\CommandMultiply::class,
     \Jakmall\Recruitment\Calculator\Commands\CommandDivide::class,
     \Jakmall\Recruitment\Calculator\Commands\CommandPow::class,
+    \Jakmall\Recruitment\Calculator\Commands\CommandHistory::class,
+    \Jakmall\Recruitment\Calculator\Commands\CommandClear::class,
 
 
 

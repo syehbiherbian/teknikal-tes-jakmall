@@ -91,6 +91,6 @@ class CommandDivide extends Command
     }
     protected function getCommandVerb(): string
     {
-        return 'Multiply';
+        return 'Divide';
     }
 }

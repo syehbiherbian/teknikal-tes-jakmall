@@ -25,11 +25,11 @@ class CommandPow extends Command
 
     public function handle(): void
     {
-        $result = $this->processedCalculation();
+        $result = $this->prosesKalkulasi();
         echo $result. "\n";
     }
 
-    protected function processedCalculation() {
+    protected function prosesKalkulasi() {
         $base = $this->getBase();
         $exp  = $this->getExp();
 
