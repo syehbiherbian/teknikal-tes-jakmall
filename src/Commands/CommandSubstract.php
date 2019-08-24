@@ -21,15 +21,15 @@ class CommandSubstract extends Command
 
     public function handle(): void
     {
-        $result = $this->processedCalculation();
+        $result = $this->prosesKalkulasi();
         echo $result. "\n";
     }
 
-    protected function processedCalculation() {
+    protected function prosesKalkulasi() {
         $number = $this->getInput();
         if(count($number) > 0) {
             $description       = $this->generateCommand($number);
-            $resultCalculation = $this->calculateAll($number);
+            $resultCalculation = $this->hitung($number);
             $finalResult = strval($description)." = ".strval($resultCalculation);
             $this->processedFile($description, $resultCalculation, $finalResult);
         } else {
@@ -75,7 +75,7 @@ class CommandSubstract extends Command
      *
      * @return float|int
      */
-    protected function calculateAll(array $numbers)
+    protected function hitung(array $numbers)
     {
         $result = null;
         if(count($numbers) > 0) {
